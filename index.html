@@ -59,14 +59,16 @@
       </p>
       <button class="buttons">Get started</button>
     </section>
+    <img class="bg-curvy desktop" src="./images/bg-curvy-desktop.svg" alt="Curvy background" />
+    <img class="bg-curvy mobile" src="./images/bg-curvy-mobile.svg" alt="Curvy background" />
 
     <section id="info">
 
-      <div>
+      <div class="info-inner-container">
 
         <div class="info-content">
           <img src="./images/icon-access-anywhere.svg" alt="Computer" />
-          <h2>Security you can trust</h2>
+          <h2>Access your files, anywhere</h2>
           <p>
             The ability to use a smartphone, tablet, or computer to access your account means your
             files follow you everywhere.
@@ -75,7 +77,7 @@
 
         <div class="info-content">
           <img src="./images/icon-security.svg" alt="Security" />
-          <h2>Access your files, anywhere</h2>
+          <h2>Security you can trust</h2>
           <p>
             2-factor authentication and user-controlled encryption are just a couple of the security
             features we allow to help secure your files.
@@ -84,26 +86,27 @@
 
       </div>
 
-      <div>
+      <div class="info-inner-container">
 
         <div class="info-content">
           <img src="./images//icon-collaboration.svg" alt="Collaboration" />
           <h2>Real-time collaboration</h2>
-          <p>
+          <p id="collaboration-text">
             Securely share files and folders with friends, family and colleagues for live collaboration.
             No email attachments required.
           </p>
+        </div>
 
-          <div class="info-content">
-            <img src="./images/icon-any-file.svg" alt="Storing files" />
-            <h2>Store any type of file</h2>
-            <p>
-              Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-              file types to be securely stored and shared.
-            </p>
+        <div class="info-content">
+          <img src="./images/icon-any-file.svg" alt="Storing files" />
+          <h2>Store any type of file</h2>
+          <p id="store-text">
+            Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+            file types to be securely stored and shared.
+          </p>
+        </div>
 
-          </div>
-
+      </div>
     </section>
 
     <section id="stay-productive">
@@ -122,24 +125,24 @@
           Securely share files and folders with friends, family and colleagues for live collaboration. No email
           attachments required.
         </p>
-        <div>
-          <a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">
-            See how Fylo works
-          </a>
-          <img src="./images/icon-arrow.svg" alt="Go" />
-        </div>
+        <a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">
+          See how Fylo works <img src="./images/icon-arrow.svg" alt="Go" />
+        </a>
       </div>
 
     </section>
 
+
     <div id="testimonials-container">
+
+      <img src="./images/bg-quotes.png" alt="Quotation marks" id="quotes" />
 
       <div class="testimonials">
         <p class="testimonials-text">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </p>
-        <div clas="testimonials-info">
+        <div class="testimonials-info">
           <img src="./images/profile-1.jpg" alt="Satish Patel" />
           <div>
             <h3>Satish Patel</h3>
@@ -153,7 +156,7 @@
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </p>
-        <div clas="testimonials-info">
+        <div class="testimonials-info">
           <img src="./images/profile-2.jpg" alt="Bruce McKenzie" />
           <div>
             <h3>Bruce McKenzie</h3>
@@ -161,13 +164,13 @@
           </div>
         </div>
       </div>
-      
+
       <div class="testimonials">
         <p class="testimonials-text">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </p>
-        <div clas="testimonials-info">
+        <div class="testimonials-info">
           <img src="./images/profile-3.jpg" alt="Iva Boyd" />
           <div>
             <h3>Iva Boyd</h3>
@@ -175,33 +178,82 @@
           </div>
         </div>
       </div>
-      
+
     </div>
 
   </main>
+
+  <form>
+    <h2>Get early access today</h2>
+
+    <p>
+      It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+      questions, our support team would be happy to help you.
+    </p>
+
+    <div>
+      <input type="text" name="email" aria-label="Email address" placeholder="email@example.com"
+      autocomplete="off" />
+      <button class="buttons">Get Started For Free</button>
+    </div>
   
+    
+  </form>
 
-  <!-- Get early access today
+  <footer>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-  questions, our support team would be happy to help you.
+    <div id="footer-logo">
+      <img src="./images/logo.svg" alt="Fylo" />
+    </div>
 
-  Get Started For Free
+    <div id="footer-contact">
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua
+      <div id="location">
+        <img src="./images/icon-location.svg" alt="Location mark" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua
+        </p>
 
-  +1-543-123-4567
-  example@fylo.com
+      </div>
 
-  About Us
-  Jobs
-  Press
-  Blog
+      <div id="contact-info">
+        <div>
+          <img src="./images/icon-phone.svg" alt="Phone" />
+          <span>+1-543-123-4567</span>  
+        </div>
+        
+        <div>
+          <img src="./images/icon-email.svg" alt="Email" />
+          <span>example@fylo.com</span>
+        </div>
+      </div>
 
-  Contact Us
-  Terms
-  Privacy -->
+      <ul>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">About Us</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">Jobs</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">Press</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">Blogs</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">Contact Us</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">Terms</a></li>
+        <li><a href="https://luispolanco25.github.io/fylo-dark-theme-landing-page/">Privacy</a></li>
+      </ul>
+
+      <div id="social-media">
+        <button title="Facebook" aria-label="Facebook button"><i class="fab fa-facebook-f"></i></button>
+        <button title="Twitter" aria-label="Twitter button"><i class="fab fa-twitter"></i></button>
+        <button title="Instagram" aria-label="Instagram button"><i class="fab fa-instagram"></i></button>
+      </div>
+
+    </div>
+
+
+
+  </footer>
+
 
 </body>
 
