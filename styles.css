@@ -6,7 +6,6 @@
     --dark-blue-testimonial: hsl(219, 30%, 18%);
     --cyan-gradient: hsl(176, 68%, 64%);
     --blue-gradient: hsl(198, 60%, 50%);
-    --light-red-error: hsl(0, 100%, 63%);
     --white: hsl(0, 0%, 100%);
     
     --raleway: 'Raleway', sans-serif;
@@ -370,6 +369,16 @@ form button {
     padding: 1rem !important;
     width: 200px !important;
     font-size: 1.1rem !important;
+}
+
+form #error-text {
+    align-self: flex-start;
+    font-size: 0.76rem;
+    font-weight: var(--bold);
+    margin-top: 14.2rem;
+    margin-left: 2rem;
+    position: absolute;
+    opacity: 0.9;
 }
 
 footer {
