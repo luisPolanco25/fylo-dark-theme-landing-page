@@ -376,7 +376,7 @@ form #error-text {
     align-self: flex-start;
     font-size: 0.76rem;
     font-weight: var(--bold);
-    margin-top: 14.2rem;
+    margin-top: 3.56rem;
     margin-left: 2rem;
     position: absolute;
     opacity: 0.9;
@@ -714,14 +714,21 @@ footer {
         margin-right: 0;
         width: 100%;
         margin-bottom: 2rem;
+        order: 1;
     }
 
     form button {
         width: 100% !important;
+        order: 3;
     }
 
     form #error-text {
-        margin-top: 13.8rem;
+        position: static;
+        margin-top: -1.4rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        align-self: center;
+        order: 2;
     }
 
     footer {
@@ -775,5 +782,9 @@ footer {
         left: -670px;
     }
 
+    form #error-text {
+        font-size: 0.72rem;
+    }
+    
     
 }
