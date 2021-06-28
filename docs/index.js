@@ -20,6 +20,13 @@
         }
     });
 
+    input.addEventListener('focusout', () => {
+        if (!emailRegex.test(input.value)) {
+            span.innerText = 'Please enter a valid email address';
+            span.style.color = 'hsl(0, 100%, 63%)';
+        }
+    });
+    
     input.addEventListener('keydown', () => {
         span.innerText = '';
     });
